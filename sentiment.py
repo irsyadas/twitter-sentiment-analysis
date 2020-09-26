@@ -74,10 +74,8 @@ df.drop(columns = ['tweets'], axis = 1, inplace = True)
 # sentiment_polar: indicates emotions expressed in a tweet (positive, neutral, negative)
 # sentiment_subject: indicates expression of personal feelings (positive, neutral, negative)
 # sentiment_sort: sorting the polarity by their own categorical score
-
 df['sentiment_polar'] = df['english_tweets'].apply(lambda tweet: TextBlob(tweet).sentiment.polarity)
 df['sentiment_subject'] = df['english_tweets'].apply(lambda tweet: TextBlob(tweet).sentiment.subjectivity)
-
 sentimentSort = ['Positive' if score > 0 else 'Negative' if score < 0 else 'Neutral' for score in df.sentiment_polar]
 df['sentiment_category'] = sentimentSort
 
