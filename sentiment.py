@@ -21,7 +21,7 @@ api = tweepy.API(auth)
 
 
 # scrap tweets (w/o retweets) in specific user
-# iterate and gathering up to 300 tweets (without retweets)
+# iterate and gathering up to 100 tweets (without retweets)
 # lowercase function is helpful for upcoming data cleaning
 user_tweet = api.user_timeline(screen_name = 'USER', count = 100, include_rts = False)
 for tweet in user_tweet:
