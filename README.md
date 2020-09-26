@@ -1,5 +1,5 @@
 # Twitter Sentiment Analysis
-Sentiment Analysis of 7th President of Indoensia, Joko Widodo's Tweets
+Python script for twitter sentiment analysis using TextBlob and Wordcloud for exploratory data analysis
 
 # Libraries
 Run pip or conda to install these prerequisites:
