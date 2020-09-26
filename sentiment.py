@@ -56,7 +56,8 @@ word_cloud = WordCloud(width = 700, height = 500, random_state = 1,
 word_cloud.to_file('WordCloud.png')
 
 
-# SENTIMENT ANALYSIS USING TEXTBLOB
+### SENTIMENT ANALYSIS USING TEXTBLOB ###
+
 
 # due to TextBlob inaccuracy and incompability for Indonesian language
 # first we'll have to translate from Indonesian to English
