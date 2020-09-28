@@ -83,7 +83,7 @@ df['sentiment_category'] = sentimentSort
 # the sum count of three polarity category in dataframe form
 polar_counts = df.sentiment_category.value_counts().rename_axis('category').reset_index(name = 'counts')
 
-# Sentiment Polarity Visualization using Matplotlib
+# sentiment Polarity Visualization using Matplotlib
 plt.style.use('fivethirtyeight')
 fig, ax = plt.subplots(figsize = (10,10))
 ax.pie(polar_counts['counts'], autopct ='% 1.1f %%', shadow = True, labels = polar_counts['category'],
