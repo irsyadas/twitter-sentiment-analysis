@@ -20,7 +20,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 
-# scrap tweets (w/o retweets) in specific user
+# scrap tweets (w/o retweets) from specific user
 # iterate and gathering up to 100 tweets (without retweets)
 # lowercase function is helpful for upcoming data cleaning
 user_tweet = api.user_timeline(screen_name = 'USER', count = 100, include_rts = False)
