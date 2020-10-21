@@ -59,8 +59,6 @@ word_cloud.to_file('WordCloud.png')
 ### SENTIMENT ANALYSIS USING TEXTBLOB ###
 
 
-# due to TextBlob inaccuracy and incompability for Indonesian language
-# first we'll have to translate from Indonesian to English
 # iterate through every row in df, translate to english, and make a column for it
 translator = Translator()
 for index, row in df.iterrows():
