@@ -1,7 +1,7 @@
 # Twitter Sentiment Analysis
-Python script for twitter sentiment analysis using TextBlob and Wordcloud for exploratory data analysis, in regards of specific twitter account's tweets or public keyword search.
+Python script for twitter sentiment analysis using TextBlob and Wordcloud for exploratory data analysis based on specific twitter account or public keyword search.
 
-# Libraries
+## Libraries
 Run pip or conda to install these prerequisites:
 1. pandas
 2. tweepy
@@ -9,3 +9,6 @@ Run pip or conda to install these prerequisites:
 4. googletrans
 5. textblob
 6. wordcloud
+
+## Usage
+Run `python3 sentiment.py`
